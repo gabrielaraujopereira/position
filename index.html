@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position </title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        body{
+            background-color: rgb(2, 58, 2);
+        }
+        h1{
+            background-color: darkgreen;
+            color: white;
+            padding: 1.5em;
+        }
+        p{
+            background-color: darkgreen;
+        }
+        /*div{
+            width: 100px;
+            height: 50px;
+            background-color:cornflowerblue;
+            margin: auto;            
+        }*/
+        .button{
+            padding-top: 15px;
+            text-align: center;
+        }
+
+        .fixed{
+            position: fixed;
+            width: 100%;
+            z-index: 1030;
+            top:0;
+        }
+
+        .cabe{
+            width: 100%;
+            position: relative;
+            top: 60px;
+        }      
+
+        .container{
+            width: 100%;
+            height: 1220px;
+            top:60px;
+            position: relative;
+            background-color: black;
+        }     
+        
+        .topright{
+            position: absolute;
+            width: 20%;
+            background-color: darkgreen;
+            right: 16px;
+            top: 50px;
+            text-align: center;
+            border-radius: 40px;
+            padding: 1em;
+
+        }
+
+        .topleft{
+            position: absolute;
+            width: 20%;
+            background-color: darkgreen;
+            left: 16px;
+            top: 50px;
+            text-align: center;
+            border-radius: 40px;
+            padding: 1em;
+
+        }
+
+        .bottomleft{
+            position: absolute;
+            width: 20%;
+            background-color: darkgreen;
+            bottom: 10px;
+            left: 16px;
+            text-align: center;
+            border-radius: 40px;
+            padding: 1em;
+
+
+        }
+        .bottomright{
+            position: absolute;
+            width: 20%;
+            background-color:darkgreen;
+            bottom: 10px;
+            right: 16px;
+            text-align: center;
+            border-radius: 40px;
+            padding: 1em;
+        }
+        .center{
+            position: absolute;
+            width: 20%;
+            background-color:darkgreen;
+            right: 40%;
+            top: 610px;
+            text-align: center;
+            border-radius: 40px;
+            padding: 1em;
+        }
+        img{
+            width: 100%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fixed" style="text-align: center;color: white; font-weight: bold;" >CSS Interno e Inline</h1>
+        <div class="cabe">
+            <p style="border-color: rgb(1, 76, 1); border-style: groove; color: white;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nobis molestiae quod aperiam odit cum beatae aliquam ducimus! Quia molestiae dicta optio debitis quod ex omnis dolorum dolore soluta aut?</p>
+            <p style="border-color: rgb(1, 76, 1); border-style: groove; color: white;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex esse rerum dolorum debitis minima quam, quaerat in illum dolorem qui deserunt voluptatum ad. Perspiciatis veniam corporis explicabo inventore magnam debitis.</p>
+        </div>
+    </header>
+    <div class="main">
+        <div class="container">
+            <img src="img/invaderzim.jpg" alt="">
+            <h1>Teste...</h1>
+            <div class="topright">right top</div>
+            <div class="topleft">left top</div>
+            <div class="bottomleft">left bottom</div>
+            <div class="bottomright">right bottom</div>
+            <div class="center">center</div>
+        </div>
+
+    </div>
+</body>
+</html>
